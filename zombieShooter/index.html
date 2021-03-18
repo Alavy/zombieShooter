@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/m4.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/material.js"></script>
+	<script src="js/maths.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/human.js"></script>
+	<script src="js/zombie.js"></script>
+	<script src="js/camera2D.js"></script>
+	<script src="js/level.js"></script>
+	<script src="js/sprite.js"></script>
+	<script src="js/gun.js"></script>
+	
+	
+	<style>
+		* {margin:0; padding:0;}
+		body {overflow:hidden;}
+		canvas{background:black;}
+	</style>
+	<script>
+		window.addEventListener("load", function(){
+			window.game = new Game();
+			
+			window.game.resize(
+				window.innerWidth,
+				window.innerHeight
+			);
+			function loop(){
+				window.game.update();
+				requestAnimationFrame(loop);
+			}
+			loop();
+		});
+		window.addEventListener("keydown",function name(evt) {
+			window.game.keyPush(evt);
+		});
+		window.addEventListener("mousemove",function name(evt) {
+			window.game.mousemove(evt);
+		});
+		window.addEventListener("mousedown",function name(evt) {
+			window.game.mousedown(evt);
+		});
+		window.addEventListener("resize", function(){
+			window.game.resize(
+				window.innerWidth,
+				window.innerHeight
+			);
+		});
+		
+	</script>
+</head>
+
+<body>
+	<canvas id="canvas_element">
+
+	</canvas>
+</body>
+</html>
