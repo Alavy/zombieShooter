@@ -1,5 +1,5 @@
 # It is a browser based lightweight game.it is completely build from scratch with Vanila Java Script.
-### it is educational project which help me to learch WebGL Api.
+### it is educational project which help me to learn WebGL Api.
 
 To run this project you should use VS-Code Live Server. Or you could just use any other localhost server.
 You could run into issues if you try to open the index.html file through browser without any localhosted browser.
